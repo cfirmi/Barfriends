@@ -1,0 +1,132 @@
+
+$bg-color: #1b1b1b;
+$bf-color: #FF8700;
+$darkText-color: #202020;
+
+$nav-color: rgba(20, 20, 20, 0.52);
+$trans: translate(-50%);
+$font-fam: 'Roboto','Open Sans','AvenirNext','Helvetica Neue',Arial,Helvetica,sans-serif;
+
+* {
+    list-style: none;
+    text-decoration: none; 
+    color: $darkText-color;}
+
+body {
+    background: $bg-color;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: $font-fam;
+    font-size: 16px;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+}  
+a {
+    cursor: pointer;
+}  
+
+a:hover {
+text-decoration: none; }
+::-webkit-scrollbar {
+display: none; }
+
+.hidden {
+    display: none !important;
+}
+
+
+#navbar {
+// background: blue;
+    }
+#coaster {
+    height: 25px; width: 25px;
+    background-image: url(../img/coasterOrange.svg) ;
+    background-size: 25px;
+
+}
+
+#logo {
+    width: 100vw;
+    height: 100vh;
+    // background: rgb(255, 55, 165);
+    border-radius: 7px;
+}
+
+#quickNav {
+    width: 100%;
+    background: rgb(97, 243, 97); 
+}
+
+#features {
+    margin-top: 50px;
+    height: 850px;
+    background-position: center;
+    background-size: 400px 800px;
+    background-repeat: no-repeat; 
+    background-position-y: 50px;
+    background-position-x: 106%; }
+
+.fader {
+    position: absolute;
+    height: 950px;
+    margin-top:-30px; 
+    left: 0;right: 10%;
+    background-position: center;
+    background-size: 400px 850px;
+    background-repeat: no-repeat; 
+    background-position-y: 50px;
+    background-position-x: 100%;
+    z-index: -99;
+}
+#greenCircle {
+    height: 1000px;
+}
+#preview {
+    height: 400px;
+    // background: pink;
+}
+
+@media only screen and (max-width:1220px) {
+    .fader {
+        position: absolute;
+        height: 950px;
+        margin-top:-30px; 
+        left: 0;right: 2%;
+        background-position: center;
+        background-size: 370px 800px;
+        background-repeat: no-repeat; 
+        background-position-y: 50px;
+        background-position-x: 100%;
+        z-index: -99;
+    }
+}
+
+@media only screen and (max-width: 1050px) { 
+body {
+    height: 1000px;;
+    width: 100vw;
+// background-image: linear-gradient(-2deg, rgba(255, 162, 0, 0.932) 0%, rgba(252,183,74,0.97) 23%, #F76B1C 97%);  
+
+background-image: linear-gradient(-180deg, #FF8700 0%, rgba(255,45,44,0.84) 100%);
+}
+}
+
+@media only screen and (max-width: 950px) {
+    body {height:1100px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body {height: 1000px;
+    }
+}
+@media only screen and (max-width: 500px) { 
+    body {
+        height: 1000px;
+        width: 100vw;        
+    }
+}

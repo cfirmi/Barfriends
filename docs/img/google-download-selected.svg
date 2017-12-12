@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="572px" height="180px" viewBox="0 0 572 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>google-download-selected</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="google-download-selected" transform="translate(2.000000, 2.000000)">
+            <path d="M551.643689,176 L16.3776419,176 C7.33772964,176 0,168.10469 0,158.357621 L0,17.6654104 C0,7.92294807 7.33772964,0 16.3776419,0 L551.639423,0 C560.687867,0 567.995734,7.92294807 567.995734,17.6654104 L568,158.357621 C568,168.10469 560.687867,176 551.643689,176 Z" id="Shape-Copy-2" stroke="#A6A6A6" stroke-width="3.5" fill="#000000" fill-rule="nonzero"></path>
+            <text id="GET-IT-ON" font-family="Roboto-Medium, Roboto" font-size="30" font-weight="400" letter-spacing="-0.446400017" fill="#FFFFFF">
+                <tspan x="179.183505" y="54.5084774">GET IT ON</tspan>
+            </text>
+            <text id="Google-Play" font-family="Roboto-Medium, Roboto" font-size="55" font-weight="400" letter-spacing="-0.818400025" fill="#FFFFFF">
+                <tspan x="179.183505" y="121.906475">Google Play</tspan>
+            </text>
+            <g id="google-play-(1)" transform="translate(44.503093, 31.654676)" fill-rule="nonzero">
+                <path d="M0.461392012,4.00959233 C0.187329117,5.03131608 0,6.13331513 0,7.39208216 L0,110.93292 C0,112.172774 0.187329117,113.263005 0.450698807,114.273381 L55.2106038,59.2183998 C55.2106038,59.2179795 0.461392012,4.00959233 0.461392012,4.00959233 Z" id="Shape" fill="#00D2FF"></path>
+                <path d="M75.4544919,38.3658245 L12.5801848,1.68332279 C10.0735628,0.0844885853 7.60588759,-0.320734596 5.52106038,0.236855769 L59.5988221,54.1294964 C59.5988221,54.1294964 75.4544919,38.3658245 75.4544919,38.3658245 Z" id="Shape" fill="#00F076"></path>
+                <path d="M98.4827359,49.7595544 L82.5611702,40.0959233 L66.2527246,56.949425 L82.8638011,74.177458 L98.3548845,64.8956149 C105.916963,60.1940184 103.15855,52.6259882 98.4827359,49.7595544 Z" id="Shape" fill="#FFD500"></path>
+                <path d="M3.68070692,120.004148 C5.84242415,120.625627 8.42415489,120.253558 11.0492393,118.611952 L75.4544919,82.2607229 L58.9685641,66.1582734 C58.9685641,66.1586822 3.68070692,120.004148 3.68070692,120.004148 Z" id="Shape" fill="#F3324A"></path>
+            </g>
+        </g>
+    </g>
+</svg>
