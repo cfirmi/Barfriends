@@ -79,8 +79,9 @@ display: none; }
     background-position: center;
     background-size: 400px 850px;
     background-repeat: no-repeat; 
-    background-position-y: 50px;
+    background-position-y: 0px;
     background-position-x: 100%;
+
     z-index: -99;
 }
 #greenCircle {
@@ -90,6 +91,15 @@ display: none; }
     height: 400px;
     // background: pink;
 }
+.footer {
+    height: 10px;
+    box-shadow: 20px -20px 120px #ff8700;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+    z-index: -10000;
+    position: fixed;
+}
 
 @media only screen and (max-width:1220px) {
     .fader {
@@ -98,7 +108,7 @@ display: none; }
         margin-top:-30px; 
         left: 0;right: 2%;
         background-position: center;
-        background-size: 370px 800px;
+        background-size: 370px 760px;
         background-repeat: no-repeat; 
         background-position-y: 50px;
         background-position-x: 100%;
@@ -128,5 +138,22 @@ background-image: linear-gradient(-180deg, #FF8700 0%, rgba(255,45,44,0.84) 100%
     body {
         height: 1000px;
         width: 100vw;        
+    }
+}
+
+//Max Height
+
+@media only screen and (max-height:700px) {
+    .fader {
+        position: absolute;
+        height: 950px;
+        // margin-top:-50px; 
+        left: 0;right: 2%;
+        background-position: center;
+        background-size: 290px 560px;
+        background-repeat: no-repeat; 
+        background-position-y: 30px;
+        background-position-x: 95%;
+        z-index: -99;
     }
 }

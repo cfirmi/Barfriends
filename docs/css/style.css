@@ -286,6 +286,15 @@ button:focus {
     margin-top: 50px;
     width: 100%; } }
 
+@media only screen and (max-height: 750px) {
+  .explain1 {
+    width: 500px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 55px;
+    margin-left: 20px;
+    color: white; } }
+
 .thanks-nav {
   position: fixed;
   height: 100px;
