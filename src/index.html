@@ -17,26 +17,41 @@
 
     <body>
     <section id="navbar">
-        <div class="hamburger-container" >
+        <div class="hamburger-container popped">
             <div class="header-hamburger" id="headerHamburger" onclick="hamburger()">
-                <!-- <span></span> <span></span> <span></span> -->
-                
+                <span></span><span></span><span></span>
             </div>
         </div>
-        <div class="header-container" id="headerContainer">
-        </div>
+        <!-- <div class="header-container" id="headerContainer"></div> -->
     </section>
     <section id="mobileIcon">
         <div class="center" id="navIcon" style="width: 100%;">
             <a href="thanks.html"><img style="height: 75px; margin-top: 20px; margin-bottom: 25px;" src="img/logoDark.svg"></a>
         </div>
     </section>
+    <!-- <section id="closebox">
+        <div id="poprec" class="center">
+            <form style="margin-top: 15%;" action="/action_page.php">
+                <h1>Contact Me</h1>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <select id="country" name="country">
+                        <option value="canada">Canada</option>
+                        <option value="australia">Australia</option>
+                        <option value="usa">USA</option>
+                    </select>
+                <textarea id="subject" class="center" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section> -->
+
     <section id="mobileText">
             <!-- <p class="titles center" style="color:white; font-size:50px;">Barfriends</p> -->
             <img class="center" src="img/barfriendsDark.svg" style="width: 80%;">
         <div class="randy center" style="margin-top: 40px; width: 100%;">
             <a class="download-link" href="#"><img class="download-icon" onmouseover="this.src='img/apple-download-selected.svg'" onmouseout="this.src='img/apple-download.svg'" src="img/apple-download.svg"></a>
-            <a class="download-link" href="#"><img class="download-icon" onmouseover="this.src='img/google-download-selected.svg'" onmouseout="this.src='img/google-download.svg'" src="img/google-download.svg"></a>
+            <a class="download-link" href="#"><img  class="download-icon" onmouseover="this.src='img/google-download-selected.svg'" onmouseout="this.src='img/google-download.svg'" src="img/google-download.svg"></a>
         </div>
         <div class="small center">
             <a class="download-link" href="#"><img class="download-icon" onmouseover="this.src='img/apple-download-selected.svg'" onmouseout="this.src='img/apple-download.svg'" src="img/apple-download.svg"></a>
@@ -49,7 +64,8 @@
     <section id="logo">
         <div class="center">
             <a href="thanks.html"><img src="img/logoOrange.svg" draggable="false" style="height: 10rem; margin-top: 20vh;"></a>
-            <p class="titles center" style="color:#FF8700">Barfriends</p>
+            <!-- <p class="titles center" style="color:#FF8700">Barfriends</p> -->
+            <img src="img/barfriends.svg" class="center" style="height: 150px; margin-bottom: 50px;margin-top: 20px;">
             <div class="button">
                 <a href="#"><img class="link" src="img/google-play.svg"></a>
                 <a href="#"><img class="link" src="img/apple-store.svg"></a>
@@ -103,7 +119,7 @@
         </div>
     </section>
     <div style="height:100px;margin-top: 100px;">
-        <h1 style="color:#1b1b1b; background: purple; text-align: center;">The New Stuff</h1>
+        
     </div>
 
     <section id="features" >
@@ -113,11 +129,7 @@
             <p class="explain2">Select any bar <br> See your friends and randoms there. <br> Are you at the bar? <br> Tap the 
                 <span style="background-image: url(img/smiley-text.png); background-repeat: no-repeat; background-position: center; background-size: 35px; color: rgba(255, 255, 255, 0);">AA</span> 
                     for Bars and Friends. <br> Select the <span style="background-image: url(img/green-circle.png); background-repeat: no-repeat; background-position: center; background-size: 25px; color: rgba(255, 255, 255, 0);">AA</span> Highlighted bar, it let's you Message</p>
-        </div>
-
-    </section>
-    <section class="footer">
-        <h1>this footer has nothing</h1>
+            </div>
     </section>
 
         <script src="js/jquery.min.js"></script>
