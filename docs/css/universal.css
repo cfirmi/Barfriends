@@ -126,7 +126,15 @@ a:hover {
     background-repeat: no-repeat;
     background-position-y: 50px;
     background-position-x: 100%;
-    z-index: -99; } }
+    z-index: -99; }
+  #features {
+    margin-top: 50px;
+    height: 580px;
+    background-position: center;
+    background-size: 400px 800px;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    background-position-x: 106%; } }
 
 @media only screen and (max-width: 1050px) {
   body {
@@ -149,15 +157,23 @@ a:hover {
     height: 920px;
     width: 100vw; } }
 
-@media only screen and (max-height: 700px) {
+@media only screen and (max-height: 845px) {
+  #features {
+    height: 600px; }
   .fader {
-    position: absolute;
-    height: 950px;
-    left: 0;
-    right: 2%;
-    background-position: center;
-    background-size: 290px 560px;
-    background-repeat: no-repeat;
-    background-position-y: 30px;
-    background-position-x: 95%;
-    z-index: -99; } }
+    height: 750px;
+    background-size: 340px 660px; } }
+
+@media only screen and (max-height: 750px) {
+  #features {
+    height: 330px; }
+  .fader {
+    height: 670px;
+    background-size: 300px 600px; } }
+
+@media only screen and (max-height: 700px) {
+  #features {
+    height: 330px; }
+  .fader {
+    height: 670px;
+    background-size: 300px 600px; } }

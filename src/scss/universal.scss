@@ -114,6 +114,7 @@ display: none; }
     margin-top: 10%;
 
 }
+
 @media only screen and (max-width:1920px) {
     .fader {
         position: absolute;
@@ -128,6 +129,8 @@ display: none; }
         z-index: -99;
     }
 }
+
+
 @media only screen and (max-width:1220px) {
     .fader {
         position: absolute;
@@ -141,49 +144,74 @@ display: none; }
         background-position-x: 100%;
         z-index: -99;
     }
-}
-
-@media only screen and (max-width: 1050px) { 
-body {
-    height: 1000px;;
-    width: 100vw;
-// background-image: linear-gradient(-2deg, rgba(255, 162, 0, 0.932) 0%, rgba(252,183,74,0.97) 23%, #F76B1C 97%);  
-
-background-image: linear-gradient(-180deg, #FF8700 0%, rgba(255,45,44,0.84) 100%);
-}
-#poprec {
-    display: none;
-}
-}
-
-@media only screen and (max-width: 950px) {
-    body {height:1100px;
-    }
-}
-@media only screen and (max-width: 600px) {
-    body {height: 1000px;
-    }
-}
-@media only screen and (max-width: 500px) { 
-    body {
-        height: 920px;
-        width: 100vw;        
-    }
-}
-
-//Max Height
-
-@media only screen and (max-height:700px) {
-    .fader {
-        position: absolute;
-        height: 950px;
-        // margin-top:-50px; 
-        left: 0;right: 2%;
+    #features {
+        margin-top: 50px;
+        height: 580px;
         background-position: center;
-        background-size: 290px 560px;
+        background-size: 400px 800px;
         background-repeat: no-repeat; 
-        background-position-y: 30px;
-        background-position-x: 95%;
-        z-index: -99;
+        background-position-y: 50px;
+        background-position-x: 106%; }
     }
-}
+    
+    @media only screen and (max-width: 1050px) { 
+        body {
+            height: 1000px;;
+            width: 100vw;
+            // background-image: linear-gradient(-2deg, rgba(255, 162, 0, 0.932) 0%, rgba(252,183,74,0.97) 23%, #F76B1C 97%);  
+            
+            background-image: linear-gradient(-180deg, #FF8700 0%, rgba(255,45,44,0.84) 100%);
+        }
+        #poprec {
+            display: none;
+        }
+    }
+    
+    @media only screen and (max-width: 950px) {
+        body {height:1100px;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        body {height: 1000px;
+        }
+    }
+    @media only screen and (max-width: 500px) { 
+        body {
+            height: 920px;
+            width: 100vw;        
+        }
+    }
+    
+    //Max Height
+    @media only screen and (max-height: 845px) {
+    #features {
+        height: 600px;
+    }
+
+    .fader {
+        height: 750px;
+        background-size: 340px 660px;
+    }
+}    
+@media only screen and (max-height: 750px) {
+    #features {
+        height: 330px;
+    }
+
+    .fader {
+        height: 670px;
+        background-size: 300px 600px;
+    }
+} 
+@media only screen and (max-height: 700px) {
+    #features {
+        height: 330px;
+    }
+
+    .fader {
+        height: 670px;
+        background-size: 300px 600px;
+    }
+} 
+
+                                                       
