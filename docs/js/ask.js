@@ -18,7 +18,7 @@ $(document).ready(function(){
 
 
     setInterval(function() {
-        image.fadeOut(200, function() {
+        image.fadeOut(150, function() {
             image.css("background-image", "url("+images[count++]+")");
             image.fadeIn(100);
         });
@@ -26,7 +26,5 @@ $(document).ready(function(){
             count = 0;
         }
     },2000);
-
-
 
 }) ;

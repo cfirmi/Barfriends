@@ -1,5 +1,5 @@
 
-$bg-color: #1b1b1b;
+$bg-color: #161616;
 $bf-color: #FF8700;
 $darkText-color: #202020;
 
@@ -32,13 +32,18 @@ a {
 
 a:hover {
 text-decoration: none; }
+
 ::-webkit-scrollbar {
 display: none; }
 
-.hidden {
-    display: none !important;
-}
 
+
+#navbar{
+    position: fixed;
+    height: 50px;
+    left: 0; right: 0;
+    // background: #9f0057;
+}
 #coaster {
     height: 25px; width: 25px;
     background-image: url(../img/coasterOrange.svg) ;
@@ -52,10 +57,13 @@ display: none; }
     // background: rgb(255, 55, 165);
     border-radius: 7px;
 }
-
-#quickNav {
+.full-background {
+    // background-image: url('../img/death-star-bar.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
     width: 100%;
-    background: rgb(97, 243, 97); 
 }
 
 #features {
@@ -96,23 +104,12 @@ display: none; }
     z-index: -10000;
     position: fixed;
 }
-#closebox {
-    position: fixed;
-    background: rgba(255, 166, 0, 0.173);
-    height: 100vh;
-    width: 100vw;
-    z-index: 10100;
-}
 
-#poprec {
-    height: 80vh;
-    width: 70vw;
-    border-radius: 55px;
-    background: white;
-    position: fixed;
-    z-index: 12000;
-    margin-top: 10%;
-
+///Mobile 
+.mobile-icon {
+    height: 55px;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 @media only screen and (max-width:1920px) {
@@ -158,17 +155,33 @@ display: none; }
         body {
             height: 1000px;;
             width: 100vw;
-            // background-image: linear-gradient(-2deg, rgba(255, 162, 0, 0.932) 0%, rgba(252,183,74,0.97) 23%, #F76B1C 97%);  
-            
-            background-image: linear-gradient(-180deg, #FF8700 0%, rgba(255,45,44,0.84) 100%);
         }
         #poprec {
             display: none;
+        }
+        .contactBox-opened {
+            display: none;
+            top:0px;
+            position: fixed;
+            height: 100vh;
+            width: 100vw;
+            z-index: 10100;
+            background: #ff990030;
+            // -webkit-filter: blur(205px);
+        }
+        .mobile-icon {
+            margin-top: 100px;
+            height: 100px;
         }
     }
     
     @media only screen and (max-width: 950px) {
         body {height:1100px;
+            background: #161616;
+        }
+        .mobile-icon {
+            margin-top: 40px;
+            height: 65px;
         }
     }
     @media only screen and (max-width: 600px) {
@@ -184,34 +197,75 @@ display: none; }
     
     //Max Height
     @media only screen and (max-height: 845px) {
-    #features {
-        height: 600px;
-    }
+        #features {
+            height: 600px;
+        }
+        
+        .fader {
+            height: 750px;
+            background-size: 340px 660px;
+        }
+    }    
+    @media only screen and (max-height: 750px) {
+        #features {
+            height: 330px;
+        }
+        
+        .fader {
+            height: 670px;
+            background-size: 300px 600px;
+        }
+    } 
+    @media only screen and (max-height: 700px) {
+        #features {
+            height: 330px;
+        }
+        
+        .fader {
+            height: 670px;
+            background-size: 300px 600px;
+        }
+    } 
 
-    .fader {
-        height: 750px;
-        background-size: 340px 660px;
+    
+    .contactBox-opened {
+        top:0px;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        z-index: 10100;
+        background: #ff990030;
+        // -webkit-filter: blur(205px);
     }
-}    
-@media only screen and (max-height: 750px) {
-    #features {
-        height: 330px;
+    .contactBox-closed {
+        display: none;
+        top: 0px;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        z-index: -100;
+        transition: all 0.4s ease-in-out;   
     }
-
-    .fader {
-        height: 670px;
-        background-size: 300px 600px;
+    
+    #poprec {
+        position: absolute;
+        margin-top: 1%;
+        min-height: 600px;
+        width: 70vw;
+        border-radius: 40px;
+        z-index: 12200;
+        background: rgb(22, 22, 22);
+        
     }
-} 
-@media only screen and (max-height: 700px) {
-    #features {
-        height: 330px;
+    
+    #fname,#lname,#country {
+        background: rgba(0, 0, 0, 0);
+        border: none;
+        border-bottom: 1px solid white;
+        font-size: 20px;
+        color: $bf-color;
     }
-
-    .fader {
-        height: 670px;
-        background-size: 300px 600px;
+    #subject {
+        background: $bg-color;
+        color: white;
     }
-} 
-
-                                                       
