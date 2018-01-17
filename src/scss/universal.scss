@@ -230,6 +230,8 @@ display: none; }
     } 
 
     
+    //Contact Forum Styles
+
     .contactBox-opened {
         top:0px;
         position: fixed;
@@ -270,4 +272,37 @@ display: none; }
     #subject {
         background: $bg-color;
         color: white;
+    }
+    input[type=text], select, textarea {
+        width: 65%; /* Full width */
+        padding: 12px; /* Some padding */  
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical;
+    }
+    
+    input[type=submit] {
+        background-color: #4CAF50;
+        color: $bg-color;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 25px;
+        margin-bottom: 25px;
+        cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+    .fa-times-circle {
+        position:absolute; 
+        right: 20px; 
+        margin-top: 20px; 
+        font-size: 50px;
+        color:#222222; 
+        cursor: pointer;
+    }
+    .fa-times-circle:hover {
+        color:#292929; 
     }
