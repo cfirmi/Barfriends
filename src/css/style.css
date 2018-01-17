@@ -278,12 +278,10 @@ button:focus {
     font-weight: 600; }
   .small {
     display: none; }
-  #mobileIcon {
-    display: inline; }
   .download-icon {
     height: 6rem; } }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1050px) {
   .butBetter {
     width: 55vw; }
   .randy {
@@ -308,3 +306,39 @@ button:focus {
   z-index: 10010;
   margin-left: 50%;
   transform: translate(-50%); }
+
+input[type=text], select, textarea {
+  width: 65%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical;
+  resize: horizontal; }
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: #141414;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer; }
+
+input[type=submit]:hover {
+  background-color: #45a049; }
+
+.fa-times-circle {
+  position: absolute;
+  right: 20px;
+  margin-top: 20px;
+  font-size: 50px;
+  color: #222222;
+  cursor: pointer; }
+
+.fa-times-circle:hover {
+  color: #292929; }

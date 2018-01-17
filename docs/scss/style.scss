@@ -348,9 +348,6 @@ button:focus {
         display: none;
     }
 
-#mobileIcon {
-    display: inline;
-}
 .download-icon {
 
     height: 6rem;
@@ -358,7 +355,7 @@ button:focus {
 
 }
 
-@media only screen and (max-width: 950px) { 
+@media only screen and (max-width: 1050px) { 
 
     .butBetter {
         width: 55vw;
