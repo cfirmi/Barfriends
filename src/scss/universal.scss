@@ -262,19 +262,34 @@ display: none; }
         
     }
     
-    #fname,#lname,#country {
+    #fname,#lname,#subject,#email {
         background: rgba(0, 0, 0, 0);
         border: none;
         border-bottom: 1px solid white;
         font-size: 20px;
+        background: $bg-color;
         color: $bf-color;
     }
-    #subject {
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus
+    input:-webkit-autofill, 
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+        -webkit-text-fill-color: $bf-color;
+        -webkit-box-shadow: 0 0 0px 1000px $bg-color inset;
+        transition: background-color 5000s ease-in-out 0s;
+      }
+    #response {
         background: $bg-color;
         color: white;
     }
     input[type=text], select, textarea {
-        width: 65%; /* Full width */
+        width: 64%; /* Full width */
         padding: 12px; /* Some padding */  
         box-sizing: border-box; /* Make sure that padding and width stays in place */
         margin-top: 6px; /* Add a top margin */
@@ -305,4 +320,10 @@ display: none; }
     }
     .fa-times-circle:hover {
         color:#292929; 
+    }
+
+    .alert {
+        display: none;
+        text-align: center;
+        color: #45a049;
     }

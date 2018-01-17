@@ -41,19 +41,22 @@
 
         <section class="contactBox-closed">
             <div id="poprec" class="center">
+                <!-- TO DO: Validation, Change Text to email -->
                 <i class="fa fa-times-circle" aria-hidden="true"></i>
-                <form style="margin-top: 5%;" action="/action_page.php">
+                <form id="contactform" style="margin-top: 5%;">
                     <h1 style=" font-size: 70px; color:#FF8700; margin-bottom: 10px;">Contact Me</h1>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    <input type="text" id="lname" name="lastname" placeholder="Subject..">
-                        <select id="country" name="Specific">
+                    <input type="text" required id="fname" name="firstname" placeholder="Your name..">
+                    <input type="text" required id="lname" name="lastname" placeholder="Subject..">
+                    <input type="text" required id="email" name="email" placeholder="Email..">
+                        <select id="subject" required name="Specific">
                             <option value="idea">Idea</option>
                             <option value="jobs">Jobs</option>
                             <option value="complaint">Complaint</option>
                             <option value="other">Something else...</option>
                         </select>
-                    <textarea id="subject" class="center" name="subject" placeholder="Please just say what you need to say..."></textarea>
+                    <textarea id="response" required class="center" name="response" placeholder="Please just say what you need to say..."></textarea>
                     <input type="submit" value="Submit">
+                    <div class="alert">Your message has been sent.</div>
                 </form>
             </div>
             <div class="bg-blur"></div>
@@ -133,5 +136,7 @@
             <script src="js/bootstrap.min.js"></script>
             <script src="js/ask.js"></script>
             <script src="js/navbar.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+            <script src="js/contact.js"></script>
     </body>
 </html>

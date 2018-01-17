@@ -214,19 +214,34 @@ a:hover {
   z-index: 12200;
   background: #161616; }
 
-#fname, #lname, #country {
+#fname, #lname, #subject, #email {
   background: transparent;
   border: none;
   border-bottom: 1px solid white;
   font-size: 20px;
+  background: #161616;
   color: #FF8700; }
 
-#subject {
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #FF8700;
+  -webkit-box-shadow: 0 0 0px 1000px #161616 inset;
+  transition: background-color 5000s ease-in-out 0s; }
+
+#response {
   background: #161616;
   color: white; }
 
 input[type=text], select, textarea {
-  width: 65%;
+  width: 64%;
   /* Full width */
   padding: 12px;
   /* Some padding */
@@ -260,3 +275,8 @@ input[type=submit]:hover {
 
 .fa-times-circle:hover {
   color: #292929; }
+
+.alert {
+  display: none;
+  text-align: center;
+  color: #45a049; }

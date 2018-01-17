@@ -230,6 +230,8 @@ display: none; }
     } 
 
     
+    //Contact Forum Styles
+
     .contactBox-opened {
         top:0px;
         position: fixed;
@@ -260,14 +262,68 @@ display: none; }
         
     }
     
-    #fname,#lname,#country {
+    #fname,#lname,#subject,#email {
         background: rgba(0, 0, 0, 0);
         border: none;
         border-bottom: 1px solid white;
         font-size: 20px;
+        background: $bg-color;
         color: $bf-color;
     }
-    #subject {
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus
+    input:-webkit-autofill, 
+    textarea:-webkit-autofill,
+    textarea:-webkit-autofill:hover
+    textarea:-webkit-autofill:focus,
+    select:-webkit-autofill,
+    select:-webkit-autofill:hover,
+    select:-webkit-autofill:focus {
+        -webkit-text-fill-color: $bf-color;
+        -webkit-box-shadow: 0 0 0px 1000px $bg-color inset;
+        transition: background-color 5000s ease-in-out 0s;
+      }
+    #response {
         background: $bg-color;
         color: white;
+    }
+    input[type=text], select, textarea {
+        width: 64%; /* Full width */
+        padding: 12px; /* Some padding */  
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical;
+    }
+    
+    input[type=submit] {
+        background-color: #4CAF50;
+        color: $bg-color;
+        padding: 12px 30px;
+        border: none;
+        border-radius: 25px;
+        margin-bottom: 25px;
+        cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+    .fa-times-circle {
+        position:absolute; 
+        right: 20px; 
+        margin-top: 20px; 
+        font-size: 50px;
+        color:#222222; 
+        cursor: pointer;
+    }
+    .fa-times-circle:hover {
+        color:#292929; 
+    }
+
+    .alert {
+        display: none;
+        text-align: center;
+        color: #45a049;
     }
