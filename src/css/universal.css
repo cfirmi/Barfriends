@@ -116,8 +116,8 @@ a:hover {
 #poprec {
   position: absolute;
   margin-top: 8%;
-  min-height: 500px;
-  width: 70vw;
+  min-height: 650px;
+  width: 65vw;
   border-radius: 40px;
   z-index: 12200;
   background: #161616; }
@@ -151,7 +151,7 @@ select:-webkit-autofill:focus {
 input[type=text], select, textarea {
   width: 64%;
   /* Full width */
-  padding: 8px;
+  padding: 12px;
   /* Some padding */
   box-sizing: border-box;
   /* Make sure that padding and width stays in place */
