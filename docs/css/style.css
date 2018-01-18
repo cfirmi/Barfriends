@@ -184,10 +184,15 @@
   font-size: 1.7em;
   width: 900px; }
 
-.icon {
-  height: 152px;
+.iconOut {
+  height: 182px;
   padding: 3px;
-  width: 152px; }
+  width: 182px; }
+
+.iconIn {
+  height: 200px;
+  padding: 3px;
+  width: 200px; }
 
 .dance {
   background: url("../img/dance-icon.svg") no-repeat center;

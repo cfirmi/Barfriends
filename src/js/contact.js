@@ -13,6 +13,33 @@
 
 var messagesRef = firebase.database().ref('messages');
 
+var ref = firebase.database().ref('messages');
+ref.on('value', gotResponse, errResponse);
+
+function gotResponse(data) {
+    var messages = data.val();
+    var keys = Object.keys(messages);
+    for ( var i = 0; i < keys.length; i++) {
+        var k = keys[i];
+        var fname = messages[k].fname;
+        var lname = messages[k].lname;
+        var email = messages[k].email;
+        var subject = messages[k].subject;
+        var message = messages[k].response;
+        // console.log(fname, lname, email, subject, message);
+
+        var li = createElement('li', fname + ' ' + lname);
+        li.parent('messageList');
+       
+    }
+}
+
+function errResponse(err) {
+    console.log('Err.');
+    console.log(err)
+}
+
+
 
 //Listen for form submit
 document.getElementById('contactform').addEventListener('submit', submitForm);
@@ -31,11 +58,13 @@ function submitForm(e) {
     saveMessage(fname, lname, email, subject ,response);
 
     //Show Alert
+    document.querySelector('.submit').style.display = 'none';
     document.querySelector('.alert').style.display = 'block';
 
     // Hide Alert after 3 seconds
     setTimeout(function () {
         document.querySelector('.alert').style.display = 'none';
+        document.querySelector('.submit').style.display = 'inline';
     },2000);
     document.getElementById('contactform').reset();
 }
