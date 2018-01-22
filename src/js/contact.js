@@ -1,5 +1,5 @@
-  // Initialize Firebase
-  var config = {
+ // Initialize Firebase
+ var config = {
     apiKey: "AIzaSyANOr0JoVFJs5eKoZ6Z4xoRAiX--2np9FI",
     authDomain: "barfriends-682ef.firebaseapp.com",
     databaseURL: "https://barfriends-682ef.firebaseio.com",
@@ -48,14 +48,13 @@ document.getElementById('contactform').addEventListener('submit', submitForm);
 function submitForm(e) {
     e.preventDefault();
     //Get values 
-    var fname = getInputVal('fname');
-    var lname = getInputVal('lname');
+    var name = getInputVal('name');
     var email = getInputVal('email');
     var subject = getInputVal('subject');
     var response = getInputVal('response');
 
     //Save Message
-    saveMessage(fname, lname, email, subject ,response);
+    saveMessage(name, email, subject ,response);
 
     //Show Alert
     document.querySelector('.submit').style.display = 'none';
@@ -75,11 +74,10 @@ function getInputVal(id) {
 }
 
 //Save Message to Firebase
-function saveMessage(fname, lname, email, subject, response) {
+function saveMessage(name, email, subject, response) {
     var newMessageRef = messagesRef.push();
     newMessageRef.set({
-        fname: fname,
-        lname: lname,
+        fname: name,
         email: email,
         subject: subject,
         response: response
