@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="572px" height="175px" viewBox="0 0 572 175" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
     <title>google-download</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="google-download" transform="translate(2.000000, 2.000000)">
-            <path d="M551.643689,171 L16.3776419,171 C7.33772964,171 0,163.328989 0,153.858825 L0,17.1635521 C0,7.69786432 7.33772964,0 16.3776419,0 L551.639423,0 C560.687867,0 567.995734,7.69786432 567.995734,17.1635521 L568,153.858825 C568,163.328989 560.687867,171 551.643689,171 Z" id="Shape-Copy-2" stroke="#272727" stroke-width="3.5" fill="#FF8700" fill-rule="nonzero"></path>
+            <path d="M551.643689,171 L16.3776419,171 C7.33772964,171 0,163.328989 0,153.858825 L0,17.1635521 C0,7.69786432 7.33772964,0 16.3776419,0 L551.639423,0 C560.687867,0 567.995734,7.69786432 567.995734,17.1635521 L568,153.858825 C568,163.328989 560.687867,171 551.643689,171 Z" id="Shape-Copy-2" stroke="#272727" stroke-width="3.5" fill="#151515" fill-rule="nonzero"></path>
             <text id="GET-IT-ON" font-family="Roboto-Medium, Roboto" font-size="30" font-weight="400" letter-spacing="-0.446400017" fill="#272727">
                 <tspan x="179.183505" y="53.7553957">GET IT ON</tspan>
             </text>
             <text id="Google-Play" font-family="Roboto-Medium, Roboto" font-size="55" font-weight="400" letter-spacing="-0.818400025" fill="#272727">
                 <tspan x="179.183505" y="119.892086">Google Play</tspan>
             </text>
-            <g id="google-play-(1)" transform="translate(44.503093, 30.755396)" fill-rule="nonzero" fill="#272727">
+            <g id="google-play-(1)" transform="translate(45.000000, 31.000000)" fill="#272727" fill-rule="nonzero">
                 <path d="M0.461392012,3.89568345 C0.187329117,4.88838097 0,5.95907323 0,7.18207983 L0,107.781417 C0,108.986048 0.187329117,110.045306 0.450698807,111.026978 L55.2106038,57.5360589 C55.2106038,57.5356505 0.461392012,3.89568345 0.461392012,3.89568345 Z" id="Shape"></path>
                 <path d="M75.4544919,37.2758863 L12.5801848,1.63550112 C10.0735628,0.0820883414 7.60588759,-0.311622818 5.52106038,0.230126912 L59.5988221,52.5917266 C59.5988221,52.5917266 75.4544919,37.2758863 75.4544919,37.2758863 Z" id="Shape"></path>
                 <path d="M98.4827359,48.3459307 L82.5611702,38.9568345 L66.2527246,55.3315436 L82.8638011,72.0701439 L98.3548845,63.0519895 C105.916963,58.4839611 103.15855,51.1309317 98.4827359,48.3459307 Z" id="Shape"></path>

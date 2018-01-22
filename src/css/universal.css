@@ -48,9 +48,6 @@ a:hover {
   border-radius: 7px; }
 
 .full-background {
-  background-position: center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
   height: 100%;
   width: 100%; }
 
@@ -96,13 +93,19 @@ a:hover {
   margin-top: 20px;
   margin-bottom: 25px; }
 
+.mobileTitle {
+  font-size: 80px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.5px; }
+
 .contactBox-opened {
   top: 0px;
   position: fixed;
   height: 100vh;
   width: 100vw;
   z-index: 10100;
-  background: #ff990030; }
+  background: rgba(31, 31, 31, 0.262); }
 
 .contactBox-closed {
   display: none;
@@ -116,13 +119,16 @@ a:hover {
 #poprec {
   position: absolute;
   margin-top: 8%;
-  min-height: 500px;
-  width: 70vw;
+  margin-left: 18%;
+  min-height: 650px;
+  width: 66vw;
   border-radius: 40px;
   z-index: 12200;
+  text-align: center;
+  box-shadow: -15px 10px #121212;
   background: #161616; }
 
-#fname, #lname, #subject, #email {
+#name, #subject, #email {
   background: transparent;
   border: none;
   border-bottom: 1px solid white;
@@ -146,12 +152,26 @@ select:-webkit-autofill:focus {
 
 #response {
   background: #161616;
-  color: white; }
+  color: white;
+  height: 200px; }
 
 input[type=text], select, textarea {
   width: 64%;
   /* Full width */
-  padding: 8px;
+  padding: 12px;
+  /* Some padding */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical; }
+
+input[type=email], select, textarea {
+  width: 64%;
+  /* Full width */
+  padding: 12px;
   /* Some padding */
   box-sizing: border-box;
   /* Make sure that padding and width stays in place */
@@ -260,33 +280,70 @@ input[type=submit]:hover {
     height: 920px;
     width: 100vw; } }
 
+@media only screen and (max-height: 650px) {
+  #poprec {
+    position: absolute;
+    margin-top: 2%;
+    max-height: 590px;
+    width: 70vw;
+    border-radius: 40px;
+    z-index: 12200;
+    background: #161616; }
+  #response {
+    background: #161616;
+    color: white;
+    max-height: 100px; } }
+
+@media only screen and (max-height: 700px) {
+  #features {
+    height: 330px; }
+  .fader {
+    height: 670px;
+    background-size: 300px 600px; }
+  #poprec {
+    position: absolute;
+    margin-top: 3%;
+    max-height: 580px;
+    width: 70vw;
+    border-radius: 40px;
+    z-index: 12200;
+    background: #161616; }
+  #response {
+    background: #161616;
+    color: white;
+    max-height: 100px; } }
+
+@media only screen and (max-height: 750px) {
+  #poprec {
+    position: absolute;
+    margin-top: 4%;
+    min-height: 500px;
+    width: 70vw;
+    border-radius: 40px;
+    z-index: 12200;
+    background: #161616; }
+  #response {
+    background: #161616;
+    color: white;
+    height: 100px; } }
+
+@media only screen and (max-height: 800px) {
+  #poprec {
+    position: absolute;
+    margin-top: 5%;
+    min-height: 500px;
+    width: 70vw;
+    border-radius: 40px;
+    z-index: 12200;
+    background: #161616; }
+  #response {
+    background: #161616;
+    color: white;
+    height: 200px; } }
+
 @media only screen and (max-height: 845px) {
   #features {
     height: 600px; }
   .fader {
     height: 750px;
     background-size: 340px 660px; } }
-
-@media only screen and (max-height: 750px) {
-  #features {
-    height: 330px; }
-  .fader {
-    height: 670px;
-    background-size: 300px 600px; } }
-
-@media only screen and (max-height: 700px) {
-  #features {
-    height: 330px; }
-  .fader {
-    height: 670px;
-    background-size: 300px 600px; } }
-
-@media only screen and (max-height: 700px) {
-  #poprec {
-    position: absolute;
-    margin-top: 2%;
-    min-height: 500px;
-    width: 70vw;
-    border-radius: 40px;
-    z-index: 12200;
-    background: #161616; } }
