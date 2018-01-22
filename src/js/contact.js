@@ -48,13 +48,14 @@ document.getElementById('contactform').addEventListener('submit', submitForm);
 function submitForm(e) {
     e.preventDefault();
     //Get values 
-    var name = getInputVal('name');
+    var fname = getInputVal('fname');
+    var lname = getInputVal('lname');
     var email = getInputVal('email');
     var subject = getInputVal('subject');
     var response = getInputVal('response');
 
     //Save Message
-    saveMessage(name, email, subject ,response);
+    saveMessage(fname, lname, email, subject ,response);
 
     //Show Alert
     document.querySelector('.submit').style.display = 'none';
@@ -74,10 +75,11 @@ function getInputVal(id) {
 }
 
 //Save Message to Firebase
-function saveMessage(name, email, subject, response) {
+function saveMessage(fname, lname, email, subject, response) {
     var newMessageRef = messagesRef.push();
     newMessageRef.set({
-        fname: name,
+        fname: fname,
+        lname: lname,
         email: email,
         subject: subject,
         response: response
