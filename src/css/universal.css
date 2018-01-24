@@ -98,6 +98,7 @@ a:hover {
   font-size: 80px;
   text-align: center;
   font-weight: 600;
+  height: 80px;
   letter-spacing: 0.5px; }
 
 .contactBox-opened {
