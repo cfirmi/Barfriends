@@ -22,14 +22,9 @@ function gotResponse(data) {
     for ( var i = 0; i < keys.length; i++) {
         var k = keys[i];
         var fname = messages[k].fname;
-        var lname = messages[k].lname;
         var email = messages[k].email;
         var subject = messages[k].subject;
         var message = messages[k].response;
-        // console.log(fname, lname, email, subject, message);
-
-        var li = createElement('li', fname + ' ' + lname);
-        li.parent('messageList');
        
     }
 }
@@ -38,9 +33,6 @@ function errResponse(err) {
     console.log('Err.');
     console.log(err)
 }
-
-
-
 //Listen for form submit
 document.getElementById('contactform').addEventListener('submit', submitForm);
 
@@ -77,9 +69,17 @@ function getInputVal(id) {
 function saveMessage(name, email, subject, response) {
     var newMessageRef = messagesRef.push();
     newMessageRef.set({
-        fname: name,
+        name: name,
         email: email,
         subject: subject,
         response: response
     });
 }
+
+var rootref = firebase.database().ref().child("messeges");
+
+rootref.on("child_added", snap => {
+    alert(snap.val());
+});
+
+

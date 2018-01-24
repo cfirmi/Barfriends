@@ -400,3 +400,43 @@ select:focus {
 
 
 //Parallax Style CSS
+#messageBoard {
+    background: $bg-color;
+}
+
+.kitten {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background: rgb(28, 28, 28);
+    color: $bf-color;
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    border-radius: 30px;
+}
+.userInfo {
+    color: orange;
+    margin-left: 50px;
+}
+
+.myResponse {
+    width: 70%;
+    height: 45px;
+    font-size: 15px;
+    background: rgb(19, 19, 19);
+    border: none;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.subject {
+    padding: 20px;
+    // width: 80%;
+    border-radius: 25px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background: black;
+}

@@ -13,7 +13,7 @@ $(".drink").hover(function () {
 
 $(document).ready(function(){
     var count = 0;
-    var images = ["img/iphone-x1.png","img/iphone-x2.png","img/iphone-x3.png", "img/iphone-x4.png", "img/iphone-x5.png"];
+    var images = ["img/iphone-x1.png","img/iphone-x2.png","img/iphone-x3.png", "img/iphone-x4.png", "img/iphone-x5.png", "img/iphone-x6.png"];
     var image = $(".fader");
 
 
