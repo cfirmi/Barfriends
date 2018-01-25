@@ -111,11 +111,10 @@ display: none; }
 }
 .mobileTitle {
     color: $bf-color;
-    font-size: 80px;
-    text-align:center;
-    font-weight: 600;
-    height: 80px;
-    letter-spacing: 0.5px;
+    margin-left: 50%;
+    height: 15vw;
+    transform: translateX(-50%);
+    overflow-x: none;
 }
 
 
@@ -311,7 +310,7 @@ input[type=submit]:hover {
     @media only screen and (max-width: 500px) { 
         body {
             height: 920px;
-            width: 100vw;        
+            max-width: 500px;        
         }
 
     }
