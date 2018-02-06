@@ -23,6 +23,25 @@ $ASK: url("../img/ASKs-white.svg") no-repeat center;
 
 // FONT AWESOME ICONS
 
+#map {
+    position: absolute;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    height: 105vh;
+    width: 100vw;
+    z-index: -20;
+}
+
+#hide {
+    position: absolute;
+    background: $bg-color;
+    z-index: 2000;
+top: 99vh;
+
+    width: 100vw;
+    height: 55px;
+}
+
 .fa-comments {
     float: right;
     margin: 20px 50px 0 0;
