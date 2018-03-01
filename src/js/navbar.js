@@ -21,8 +21,6 @@ function downloadLeave() {
     onmouseleave ="this.src='img/apple-download.svg'";
 }
 
-var messageIcon = document.getElementsByClassName('fa-comments');
-var contactBoxClosed = document.getElementsByClassName('.contactBox-closed');
 
 $('.fa-comments').click(function() {
     $('.contactBox-closed').toggleClass('contactBox-opened')
@@ -35,3 +33,9 @@ $('.fa-times-circle').click(function() {
 });
 
 
+$("#begin").click(function() {
+    $("#beginbf").toggle()
+});
+$("#use").click(function() {
+    $("#usingBF").toggle()
+});

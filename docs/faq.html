@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/universal.css"> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+        <link rel="icon" href="img/logoDark.svg">
+        <meta name="theme-color" content="#161616">
+        <title>Barfriends</title>
+    </head>
+
+    <body>
+            <!-- <h1 class="center" style="margin-top: 10vh;text-align:center; width: 70vw;line-height: 80px;">You can also use</h1> -->
+    <div class="faq-nav container center">
+        <div class="row">
+            <div class="col">
+            <a href="https://gitter.im/Barfriends/Lobby" target="_blank"><i class="faq-icon fab fa-gitter"></i></a> 
+            </div>
+            <div class="col">
+            <a href="mailto:christian@barfriends.net"><i class="faq-icon fas fa-envelope"></i></a> 
+            </div>
+            <div class="col">
+                <i class="faq-icon fas fa-comments"></i>
+                </div>
+            <div class="col">
+            <a href="https://www.instagram.com/realbfs/" target="_blank"><i class="faq-icon fab fa-instagram"></i></a> 
+            </div>
+            <div class="col">
+            <a href="https://twitter.com/realbfs" target="_blank"><i class="faq-icon fab fa-twitter"></i></a> 
+            </div>
+            <div style="width:100%; margin-top: 50px;">
+                <a href="index.html"><i style="font-size: 30px; margin-bottom: 45px;" class="faq-home fas fa-home"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div id="begin" class="col">
+                <h1 class="item-use">How you begin</h1>
+            </div>
+            <div id="use" class="col">
+                <h1 class="item-use">How to use</h1>
+            </div>
+        </div>
+    </div>
+    <section class="contactBox-closed">
+        <div id="poprec" class="animated bounceInUp">
+            <!-- TO DO: Validation, Change Text to email -->
+            <i class="fa fa-times-circle" aria-hidden="true"></i>
+            <form id="contactform" style="margin-top: 5%;">
+                <h1 style=" font-size: 50px; color:#FF8700; margin-bottom: 10px;">Contact Me</h1>
+                <input type="text" required id="name" name="name" placeholder="Your name..">
+                <input type="email" required id="email" name="email" placeholder="Email..">
+                    <select id="subject" required name="Specific">
+                        <option value="jobs">Job</option>
+                        <option value="idea">Idea</option>
+                        <option value="complaint">Complaint</option>
+                        <option value="other">Something else...</option>
+                    </select>
+                <textarea id="response" required class="center" name="response" placeholder="Short and Sweet :)"></textarea>
+                <input class="submit animated bounceInUp" type="submit" value="Submit">
+                <div class="alert">Your message has been sent.</div>
+            </form>
+        </div>
+        <div class="bg-blur"></div>
+    </section>
+    <div class="container">
+        <p class="wel" onclick="myFunction()"> Welcome to Barfriends Help</p>
+        <p class="lit">If you have a question select a platform from above and have a more indepth conversation with us.</p>
+    </div>
+    <img id="beginbf" class="notusing-beginBf center" src="img/faq.2.svg">
+    <img id="usingBF" class="notusing-beginBf center" src="img/faq.2.svg">
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/ask.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/geocode.js"></script>
+
+    </body>
+</html>

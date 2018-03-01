@@ -30,14 +30,14 @@ $ASK: url("../img/ASKs-white.svg") no-repeat center;
     height: 105vh;
     width: 100vw;
     z-index: -20;
+    cursor: default;
 }
 
 #hide {
     position: absolute;
     background: $bg-color;
-    z-index: 2000;
-top: 99vh;
-
+    z-index: 1200;
+    bottom:-5vh;
     width: 100vw;
     height: 55px;
 }
@@ -77,8 +77,76 @@ top: 99vh;
     font-weight: 600;
 }
 
+.faq-nav {
+    background: #272727;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+}
+
+.item-use {
+    
+    text-align: center;
+    background: $bf-color;
+    color: white;
+    background: #272727;
+    border-radius: 20px;
+    line-height: 60px;
+    height: 80px;
+    white-space:nowrap;
+    padding: 10px;
+    transition: 0.1s ease-in-out;
+}
+.item-use:hover {
+
+    background: $bf-color;
+}
+
+.notusing-beginBf {
+    display: none;
+    margin-top: 5vh;
+    width: 90vw;
+    height: 240vh;
+    margin-bottom: 15vh;
+}
+.using-beginBf {
+    display: none;
+    margin-top: 5vh;
+    width: 90vw;
+    height: 240vh;
+    margin-bottom: 15vh;
+}
+.wel {
+    color: white;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+}
+.lit {
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
 //PRESET CLASSES END
 
+.faq-icon {
+    margin-top: 40px;
+    font-size: 45px;
+    width: 100px;
+    color: white;
+    padding-bottom: 4px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0);
+}
+.faq-icon:hover {
+    border-bottom: 4px solid $bf-color;
+
+}
+.faq-home {
+    font-size: 45px;
+    color: white;
+}
 // NAVBAR START 
 .header-container {
     position: fixed;
@@ -218,16 +286,20 @@ top: 99vh;
 }
 
 .ask-title {
-min-height: 100px;
-width: 1000px;
+min-height: 150px;
+width: 100vw;
 display: flex;
 flex-wrap: nowrap;
 background-image: url("../img/selectOne.svg");
-background-size:520px 440px;
+background-size:560px 440px;
 background-repeat: no-repeat;
 background-position: center;
 }
-    
+
+.download-again {
+    margin-top: 10px;
+    // margin-left: 40px;
+}
 .ask-nav {
 height: 300px;
 max-width: 600px;
@@ -315,6 +387,7 @@ select:focus {
 }
 .link {
     height: 45px;
+    cursor: pointer;
 }
 
 #barfriend {
@@ -340,6 +413,25 @@ select:focus {
         font-size: 35px;
         margin-left: -50px;
     }
+
+  }
+
+  .FAQ {
+      height: 50px;
+      width: 100px;
+      left: 50%;
+      top: 20px;
+      transform: translateX(-50%);
+      position: fixed;
+    //   background: orange;
+      z-index: 1300;
+      cursor: pointer;
+      z-index: 15500;
+  }
+
+  #faq {
+      height: 20px;
+      z-index: 20500;
 
   }
 
@@ -370,6 +462,9 @@ select:focus {
         font-weight: 600;
     }
     .small {
+        display: none;
+    }
+    #ask {
         display: none;
     }
 

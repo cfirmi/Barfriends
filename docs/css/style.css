@@ -1,3 +1,20 @@
+#map {
+  position: absolute;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  height: 105vh;
+  width: 100vw;
+  z-index: -20;
+  cursor: default; }
+
+#hide {
+  position: absolute;
+  background: #141414;
+  z-index: 1200;
+  bottom: -5vh;
+  width: 100vw;
+  height: 55px; }
+
 .fa-comments {
   float: right;
   margin: 20px 50px 0 0;
@@ -28,6 +45,68 @@
 #head-title {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600; }
+
+.faq-nav {
+  background: #272727;
+  margin-bottom: 30px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px; }
+
+.item-use {
+  text-align: center;
+  background: #FF8700;
+  color: white;
+  background: #272727;
+  border-radius: 20px;
+  line-height: 60px;
+  height: 80px;
+  white-space: nowrap;
+  padding: 10px;
+  transition: 0.1s ease-in-out; }
+
+.item-use:hover {
+  background: #FF8700; }
+
+.notusing-beginBf {
+  display: none;
+  margin-top: 5vh;
+  width: 90vw;
+  height: 240vh;
+  margin-bottom: 15vh; }
+
+.using-beginBf {
+  display: none;
+  margin-top: 5vh;
+  width: 90vw;
+  height: 240vh;
+  margin-bottom: 15vh; }
+
+.wel {
+  color: white;
+  font-size: 50px;
+  width: 100%;
+  text-align: center; }
+
+.lit {
+  color: white;
+  font-size: 20px;
+  width: 100%;
+  text-align: center; }
+
+.faq-icon {
+  margin-top: 40px;
+  font-size: 45px;
+  width: 100px;
+  color: white;
+  padding-bottom: 4px;
+  border-bottom: 4px solid rgba(255, 255, 255, 0); }
+
+.faq-icon:hover {
+  border-bottom: 4px solid #FF8700; }
+
+.faq-home {
+  font-size: 45px;
+  color: white; }
 
 .header-container {
   position: fixed;
@@ -150,14 +229,17 @@
   justify-content: space-around; }
 
 .ask-title {
-  min-height: 100px;
-  width: 1000px;
+  min-height: 150px;
+  width: 100vw;
   display: flex;
   flex-wrap: nowrap;
   background-image: url("../img/selectOne.svg");
-  background-size: 520px 440px;
+  background-size: 560px 440px;
   background-repeat: no-repeat;
   background-position: center; }
+
+.download-again {
+  margin-top: 10px; }
 
 .ask-nav {
   height: 300px;
@@ -245,7 +327,8 @@ select:focus {
   justify-content: space-around; }
 
 .link {
-  height: 45px; }
+  height: 45px;
+  cursor: pointer; }
 
 #barfriend {
   background-image: url(../img/barfriend-button.svg);
@@ -267,6 +350,21 @@ select:focus {
     font-size: 35px;
     margin-left: -50px; } }
 
+.FAQ {
+  height: 50px;
+  width: 100px;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  position: fixed;
+  z-index: 1300;
+  cursor: pointer;
+  z-index: 15500; }
+
+#faq {
+  height: 20px;
+  z-index: 20500; }
+
 @media only screen and (max-width: 1050px) {
   .butBetter {
     width: 50vw; }
@@ -285,6 +383,8 @@ select:focus {
     font-size: 4em;
     font-weight: 600; }
   .small {
+    display: none; }
+  #ask {
     display: none; }
   .download-icon {
     height: 6rem; } }
