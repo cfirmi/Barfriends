@@ -379,14 +379,14 @@ select:focus {
     display: none; }
   #mobileText {
     display: inline; }
-  .inspire {
-    width: 100vw;
-    font-size: 4em;
-    font-weight: 600; }
   .small {
     display: none; }
   #ask {
     display: none; }
+  .inspire {
+    width: 100vw;
+    font-size: 4em;
+    font-weight: 600; }
   .download-icon {
     height: 6rem; } }
 

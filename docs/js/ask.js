@@ -27,20 +27,6 @@ $(document).ready(function(){
         }
     },2000);
 
-    // var counts = 0;
-    // var mainImages = ["../img/background-2.jpg", "../img/background-3.jpg"];
-    // var mainImage = $(".full-background");
-
-
-    // setInterval(function() {
-    //     mainImage.fadeOut(150, function() {
-    //         mainImage.css("background-image", "url("+mainImages[counts++]+")");
-    //         mainImage.fadeIn(500);
-    //     });
-    //     if (counts == mainImages.length){
-    //         counts = 0;
-    //     }
-    // },5000);
 
 
 
