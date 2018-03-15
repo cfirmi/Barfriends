@@ -60,6 +60,7 @@ a:hover {
 
 #features {
   margin-top: 50px;
+  margin-bottom: 20px;
   height: 850px;
   background-position: center;
   background-size: 400px 800px;
@@ -254,16 +255,6 @@ input[type=submit]:hover {
     background-position-y: 50px;
     background-position-x: 106%; } }
 
-@media only screen and (min-width: 1050px) {
-  .otherSocial {
-    margin-top: 170px;
-    margin-bottom: 20px; } }
-
-@media only screen and (min-width: 1220px) {
-  .otherSocial {
-    margin-top: -80px;
-    margin-bottom: 20px; } }
-
 @media only screen and (max-width: 1050px) {
   body {
     height: 1000px;
@@ -280,9 +271,7 @@ input[type=submit]:hover {
     background: #ff990030; }
   .mobile-icon {
     margin-top: 100px;
-    height: 100px; }
-  .otherSocial {
-    display: none; } }
+    height: 100px; } }
 
 @media only screen and (max-width: 950px) {
   body {

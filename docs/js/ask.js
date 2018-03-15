@@ -25,7 +25,7 @@ $(document).ready(function(){
         if (count == images.length){
             count = 0;
         }
-    },2000);
+    },3000);
 
 
 
