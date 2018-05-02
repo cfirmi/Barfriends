@@ -78,7 +78,8 @@ display: none; }
     background-size: 400px 800px;
     background-repeat: no-repeat; 
     background-position-y: 50px;
-    background-position-x: 106%; }
+    background-position-x: 106%;
+     }
 
 
 .fader {
@@ -249,7 +250,7 @@ input[type=submit]:hover {
         margin-top:-30px; 
         left: 0;right: 10%;
         background-position: center;
-        background-size: 380px 770px;
+        background-size: 430px 770px;
         background-repeat: no-repeat; 
         background-position-y: 50px;
         background-position-x: 100%;
@@ -262,10 +263,10 @@ input[type=submit]:hover {
     .fader {
         position: absolute;
         height: 820px;
-        margin-top:-30px; 
+        margin-top:-50px; 
         left: 0;right: 2%;
         background-position: center;
-        background-size: 370px 760px;
+        background-size: 400px 760px;
         background-repeat: no-repeat; 
         background-position-y: 50px;
         background-position-x: 100%;
@@ -363,7 +364,7 @@ input[type=submit]:hover {
         }
         
         .fader {
-            height: 670px;
+            height: 600px;
             background-size: 300px 600px;
         }
         #poprec {
@@ -431,7 +432,7 @@ input[type=submit]:hover {
         
         .fader {
             height: 750px;
-            background-size: 340px 660px;
+            background-size: 350px 660px;
         }
 
     }
