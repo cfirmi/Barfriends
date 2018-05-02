@@ -9,6 +9,7 @@
   "author": "Christian Firmi",
   "license": "MIT",
   "dependencies": {
+    "hoek": "4.2.1",
     "body-parser": "^1.18.2",
     "bootstrap": "4.0.0-beta",
     "express": "^4.16.2",
