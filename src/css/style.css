@@ -233,7 +233,7 @@
   width: 100vw;
   display: flex;
   flex-wrap: nowrap;
-  background-image: url("../img/selectOne.svg");
+  background-image: url("../img/ASKMessages/selectMessage.svg");
   background-size: 560px 440px;
   background-repeat: no-repeat;
   background-position: center; }
@@ -277,27 +277,27 @@
   width: 200px; }
 
 .dance {
-  background: url("../img/dance-icon.svg") no-repeat center;
+  background: url("../img/ASKicons/dance-icon.svg") no-repeat center;
   background-size: 150px 150px; }
 
 .dance:hover {
-  background: url("../img/dance-icon white.svg") no-repeat center;
+  background: url("../img/ASKicons/dance-icon white.svg") no-repeat center;
   background-size: 150px 150px; }
 
 .drink {
-  background: url("../img/drink-icon.svg") no-repeat center;
+  background: url("../img/ASKicons/drink-icon.svg") no-repeat center;
   background-size: 150px 150px; }
 
 .drink:hover {
-  background: url("../img/drink-icon white.svg") no-repeat center;
+  background: url("../img/ASKicons/drink-icon white.svg") no-repeat center;
   background-size: 150px 150px; }
 
 .message {
-  background: url("../img/message-icon.svg") no-repeat center;
+  background: url("../img/ASKicons/message-icon.svg") no-repeat center;
   background-size: 150px 150px; }
 
 .message:hover {
-  background: url("../img/message-icon white.svg") no-repeat center;
+  background: url("../img/ASKicons/message-icon white.svg") no-repeat center;
   background-size: 150px 150px; }
 
 #typeASK {
