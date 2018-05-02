@@ -277,27 +277,27 @@
   width: 200px; }
 
 .dance {
-  background: url("../img/ASKicons/dance-icon.svg") no-repeat center;
+  background: url("../img/ASKIcons/dance-icon.svg") no-repeat center;
   background-size: 150px 150px; }
 
 .dance:hover {
-  background: url("../img/ASKicons/dance-iconwhite.svg") no-repeat center;
+  background: url("../img/ASKIcons/dance-iconwhite.svg") no-repeat center;
   background-size: 150px 150px; }
 
 .drink {
-  background: url("../img/ASKicons/drink-icon.svg") no-repeat center;
+  background: url("../img/ASKIcons/drink-icon.svg") no-repeat center;
   background-size: 150px 150px; }
 
 .drink:hover {
-  background: url("../img/ASKicons/drink-iconwhite.svg") no-repeat center;
+  background: url("../img/ASKIcons/drink-iconwhite.svg") no-repeat center;
   background-size: 150px 150px; }
 
 .message {
-  background: url("../img/ASKicons/message-icon.svg") no-repeat center;
+  background: url("../img/ASKIcons/message-icon.svg") no-repeat center;
   background-size: 150px 150px; }
 
 .message:hover {
-  background: url("../img/ASKicons/message-iconwhite.svg") no-repeat center;
+  background: url("../img/ASKIcons/message-iconwhite.svg") no-repeat center;
   background-size: 150px 150px; }
 
 #typeASK {
