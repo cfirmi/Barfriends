@@ -343,6 +343,20 @@ select:focus {
 #mobileIcon {
   display: none; }
 
+.loader {
+  position: fixed;
+  height: 100vh;
+  background: #141414;
+  width: 100vw;
+  z-index: 1000; }
+
+.preload {
+  width: 10vw;
+  min-width: 200px;
+  margin-left: 50%;
+  margin-top: 20%;
+  transform: translateX(-50%); }
+
 @media only screen and (min-width: 1500px) {
   .explain1 {
     margin-left: -50px; }
